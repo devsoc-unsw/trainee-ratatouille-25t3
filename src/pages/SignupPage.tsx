@@ -47,7 +47,7 @@ export default function SignupPage() {
                         </div>
                         <div className="password-input-wrapper">
                             <Input text="Retype Password" type={showRetypePassword ? "text" : "password"} />
-                            <span className="eye-icon" onClick={togglePasswordVisibility}>👁</span>
+                            <span className="eye-icon" onClick={toggleRetypePasswordVisibility}>👁</span>
                         </div>
                         <AuthButton to="/dashboard" text="Create account" />
                     </form>
