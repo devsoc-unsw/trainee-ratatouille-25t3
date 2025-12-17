@@ -1,6 +1,8 @@
 #root {
-  margin: 0 auto;
-  text-align: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
 }
 
 #landing-box {
@@ -11,10 +13,233 @@
   text-align: center;
 }
 
-#login-box {
-  /* Enter something */
+/* Login Page Styles */
+#login-page {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.login-container {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.login-left {
+  width: 60%;
+  background-color: white;
+  padding: 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.logo-link {
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.logo-link:hover {
+  opacity: 0.8;
+}
+
+.logo-placeholder {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #e5e7eb;
+}
+
+.account-link {
+  font-size: 0.875rem;
+  color: #374151;
+  margin: 0;
+}
+
+.account-link a {
+  color: #667eea;
+  text-decoration: underline;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 500px;
+}
+
+.login-form h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0;
+  text-align: left;
+}
+
+.google-button {
+  background-color: #f3f4f6;
+  color: #374151;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: background-color 0.2s;
+}
+
+.google-button:hover {
+  background-color: #e5e7eb;
+}
+
+.asterisk {
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+.separator {
+  text-align: center;
+  position: relative;
+  margin: 0.5rem 0;
+}
+
+.separator::before,
+.separator::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 45%;
+  height: 1px;
+  background-color: #e5e7eb;
+}
+
+.separator::before {
+  left: 0;
+}
+
+.separator::after {
+  right: 0;
+}
+
+.separator span {
+  color: #6b7280;
+  background-color: white;
+  padding: 0 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.name-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.password-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-input-wrapper input {
+  width: 100%;
+  padding-right: 2.5rem;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 1rem;
+  cursor: pointer;
+  font-size: 1.25rem;
+  user-select: none;
+  color: #4b5563;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.eye-icon:hover {
+  opacity: 1;
+}
+
+.forgot-password {
+  color: #667eea;
+  text-decoration: underline;
+  font-size: 0.875rem;
+  align-self: flex-start;
+  margin-top: -0.5rem;
+}
+
+.login-right {
+  width: 40%;
+  background-color: #f3f4f6;
+}
+
+/* Input styling */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  background-color: #f9fafb;
+  color: #1f2937;
+  transition: border-color 0.2s, background-color 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  outline: none;
+  border-color: #667eea;
+  background-color: white;
+}
+
+input::placeholder {
+  color: #9ca3af;
+}
+
+/* AuthButton styling for login */
+.login-form button:not(.google-button) {
+  background-color: #1f2937;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  text-transform: capitalize;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.login-form button:not(.google-button):hover {
+  background-color: #111827;
 }
 
 #dashboard-box {
-  /* Enter something */
+  width: 100%;
+  height: 100%;
 }
