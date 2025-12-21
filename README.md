@@ -9,9 +9,11 @@ A centralised web application for hosting group hangouts and major events with t
 
 ## Running the code
 Download dependencies with:
+
 ```npm install``` or ```npm i```
 
 Then run the code with:
+
 ```npm run dev```
 
 ## Contributors
