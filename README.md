@@ -1,4 +1,4 @@
-# Group Hangout (temp name)
+# Remly
 
 Project showcase presented by Team Ratatouille for 2025 UNSW Software Development Society's (DevSoc) Training Program. 
 
